@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+            <p class="subtitle">{{ site.description }}</p>
+            <nav>
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <a href="{{ '/projects/' | relative_url }}">Projects</a>
+                <a href="{{ '/blog/' | relative_url }}">Blog</a>
+                <a href="{{ '/about/' | relative_url }}">About</a>
+                <a href="https://github.com/robertmackayeng" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/robertjamesmackay" target="_blank">LinkedIn</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Robert MacKay, P.Eng. | <a href="https://github.com/robertmackayeng">GitHub</a> | <a href="https://linkedin.com/in/robertjamesmackay">LinkedIn</a></p>
+        </div>
+    </footer>
+</body>
+</html>
