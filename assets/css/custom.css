@@ -1,0 +1,137 @@
+/* Professional blue color overrides for slate theme */
+
+/* Primary colors */
+:root {
+    --primary-blue: #1e3a8a;
+    --secondary-blue: #2563eb;
+    --light-blue: #dbeafe;
+    --border-blue: #e0e7ff;
+}
+
+/* Header and branding */
+header {
+    border-bottom: 2px solid var(--secondary-blue);
+}
+
+header h1 {
+    color: var(--primary-blue);
+}
+
+header a {
+    color: var(--secondary-blue);
+}
+
+header a:hover {
+    color: var(--primary-blue);
+}
+
+/* Navigation */
+nav a {
+    color: var(--secondary-blue);
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
+/* Content headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-blue);
+}
+
+h2 {
+    border-bottom-color: var(--border-blue);
+}
+
+/* Links */
+a {
+    color: var(--secondary-blue);
+}
+
+a:hover {
+    color: var(--primary-blue);
+}
+
+/* Code blocks and inline code */
+code {
+    background-color: #f0f4f8;
+    color: var(--primary-blue);
+}
+
+pre {
+    background-color: #f9fafb;
+    border-left: 3px solid var(--secondary-blue);
+}
+
+/* Post cards and content blocks */
+.post-card, .project-card {
+    border-left: 4px solid var(--secondary-blue);
+    transition: all 0.3s ease;
+}
+
+.post-card:hover, .project-card:hover {
+    border-left-color: var(--primary-blue);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+/* Buttons and CTAs */
+.read-more, .btn {
+    background-color: var(--secondary-blue);
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.read-more:hover, .btn:hover {
+    background-color: var(--primary-blue);
+}
+
+/* Technical tags */
+.tech-tag, .tag {
+    background-color: #f0f4f8;
+    color: var(--primary-blue);
+    border: 1px solid var(--border-blue);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid var(--border-blue);
+    color: #666;
+}
+
+footer a {
+    color: var(--secondary-blue);
+}
+
+footer a:hover {
+    color: var(--primary-blue);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+    }
+    
+    nav a {
+        margin-right: 10px;
+        font-size: 0.9em;
+    }
+}
