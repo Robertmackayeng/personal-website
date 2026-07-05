@@ -4,9 +4,8 @@ email: robert.james.mackay@outlook.com
 description: Professional Engineer specializing in instrumentation, control systems, and automation engineering. Project portfolio, technical articles, and insights on nuclear energy, oil & gas, and industrial automation.
 
 # GitHub Pages settings
-remote_theme: pages-themes/slate@v0.2.0
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
 
